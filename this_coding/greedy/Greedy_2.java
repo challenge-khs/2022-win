@@ -28,6 +28,7 @@ public class Greedy_2 {
 		int first = arr.get(0);
 		int second = arr.get(1);
 		
+		/*
 		for(int i = 1; i <= m; i++) {
 			if(k % i == 0) {
 				result += second;
@@ -35,6 +36,13 @@ public class Greedy_2 {
 			}
 			result += first;
 		}
+		*/
+		
+		// 수열을 이용한 방식
+		int count = (m/(k+1))*k+(m%(k+1));
+		result = first*count;
+		result += second*(m-count);
+		
 		System.out.println(result);
 	}
 
