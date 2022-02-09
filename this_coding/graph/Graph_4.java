@@ -1,3 +1,4 @@
+// Kruskal's
 import java.util.*;
 
 public class Graph_5 {
